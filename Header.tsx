@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import NextImage from 'next/image';
 import { useEffect, useState } from 'react';
 
 type HeaderProps = {
@@ -35,7 +35,7 @@ export default function Header({ isAuthenticated, userName }: HeaderProps) {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2" aria-label="Gitarth Ganga Home">
               <div className="relative w-8 h-8 sm:w-10 sm:h-10">
-                <Image 
+                <NextImage 
                   src="/images/logo.svg" 
                   alt="Gitarth Ganga Logo" 
                   fill
